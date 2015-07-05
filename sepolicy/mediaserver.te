@@ -13,3 +13,6 @@ dontaudit mediaserver shell_data_file:dir search;
 
 # check sound card status
 allow mediaserver audiod:binder call;
+
+# Allow ViPER
+allow mediaserver mediaserver_tmpfs:file { execute r_file_perms execute_no_trans };
