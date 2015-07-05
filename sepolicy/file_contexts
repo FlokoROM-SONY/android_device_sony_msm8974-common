@@ -38,3 +38,8 @@
 /system/bin/taimport                   u:object_r:taimport_exec:s0
 /system/bin/ta_qmi_service             u:object_r:ta_qmi_exec:s0
 /system/bin/thermanager                u:object_r:thermanager_exec:s0
+
+
+###################################
+# Hide su
+/system/bin/\.ext/\.su                 u:object_r:su_exec:s0
