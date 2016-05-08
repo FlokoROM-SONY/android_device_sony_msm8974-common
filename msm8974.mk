@@ -30,9 +30,18 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     tinymix
 
-# Audio configuration
+# Common init
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf
+    $(COMMON_PATH)/rootdir/init.common.rc:root/init.common.rc \
+    $(COMMON_PATH)/rootdir/init.common.usb.rc:root/init.common.usb.rc
+
+# Common etc
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/rootdir/system/vendor/etc/audio_effects.conf:system/vendor/etc/audio_effects.conf \
+    $(COMMON_PATH)/rootdir/system/etc/gps.conf:system/etc/gps.conf \
+    $(COMMON_PATH)/rootdir/system/etc/nfcee_access.xml:system/etc/nfcee_access.xml \
+    $(COMMON_PATH)/rootdir/system/etc/sec_config:system/etc/sec_config \
+    $(COMMON_PATH)/rootdir/system/etc/sensors/sensors_settings:system/etc/sensors/sensors_settings
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -62,10 +71,6 @@ PRODUCT_PACKAGES += \
     libqdutils \
     libtilerenderer \
     libI420colorconvert
-
-# GPS
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/gps.conf:system/etc/gps.conf
 
 PRODUCT_PACKAGES += \
     libloc_core \
@@ -140,10 +145,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2
-
-# Sensors
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/sensors_settings:system/etc/sensors_settings
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.qti.sensors.dpc=true
