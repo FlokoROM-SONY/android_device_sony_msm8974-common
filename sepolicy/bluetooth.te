@@ -1,1 +1,2 @@
-allow bluetooth smd_device:chr_file { read write ioctl open };
+# Allow MAC address file reading
+allow bluetooth addrsetup_data_file:file r_file_perms;

@@ -1,2 +1,1 @@
-type wlan_device, dev_type;
-type rfkill_device, dev_type;
+type trim_area_partition_device, dev_type;
