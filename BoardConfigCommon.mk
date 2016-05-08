@@ -22,6 +22,8 @@ TARGET_NO_RADIOIMAGE := true
 
 # Kernel properties
 TARGET_KERNEL_SOURCE := kernel/sony/msm
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin
 
 # use CAF variants
 BOARD_USES_QCOM_HARDWARE := true
