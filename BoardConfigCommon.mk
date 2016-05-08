@@ -14,8 +14,8 @@
 
 BOARD_VENDOR := sony
 
-# Include path
-TARGET_SPECIFIC_HEADER_PATH += device/sony/msm8974-common/include
+# Include kernel headers
+PRODUCT_VENDOR_KERNEL_HEADERS := device/sony/msm8974-common/kernel-headers
 
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
