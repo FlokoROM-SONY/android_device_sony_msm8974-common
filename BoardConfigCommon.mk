@@ -15,15 +15,19 @@
 BOARD_VENDOR := sony
 
 # Include kernel headers
-PRODUCT_VENDOR_KERNEL_HEADERS := device/sony/msm8974-common/kernel-headers
+#PRODUCT_VENDOR_KERNEL_HEADERS := device/sony/msm8974-common/kernel-headers
 
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
 # Kernel properties
 TARGET_KERNEL_SOURCE := kernel/sony/msm
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-cortex-a15/bin
+TARGET_KERNEL_HAVE_EXFAT := true
+
+BOARD_CUSTOM_BOOTIMG := true
+BOARD_CUSTOM_BOOTIMG_MK := device/sony/msm8974-common/boot/custombootimg.mk
 
 # use CAF variants
 BOARD_USES_QCOM_HARDWARE := true
@@ -85,9 +89,6 @@ SF_VSYNC_EVENT_PHASE_OFFSET_NS := 5000000
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
 BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET := true
 TARGET_NO_RPC := true
-
-BOARD_CUSTOM_BOOTIMG := true
-BOARD_CUSTOM_BOOTIMG_MK := device/sony/msm8974-common/boot/custombootimg.mk
 
 # Lights HAL
 TARGET_PROVIDES_LIBLIGHT := true
