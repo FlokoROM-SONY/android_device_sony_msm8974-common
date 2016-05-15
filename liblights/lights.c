@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "lights.msm8974"
+#define LOG_TAG "lights.sony"
 
 #include <cutils/log.h>
 
