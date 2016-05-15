@@ -138,7 +138,8 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_PACKAGES += \
-    keycheck
+    keycheck \
+    toybox_static
 
 # RIL
 PRODUCT_PACKAGES += \
