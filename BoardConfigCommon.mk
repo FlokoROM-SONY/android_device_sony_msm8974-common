@@ -26,8 +26,18 @@ TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
 KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-cortex-a15/bin
 TARGET_KERNEL_HAVE_EXFAT := true
 
-BOARD_CUSTOM_BOOTIMG := true
-BOARD_CUSTOM_BOOTIMG_MK := device/sony/msm8974-common/boot/custombootimg.mk
+#BOARD_CUSTOM_BOOTIMG := true
+#BOARD_CUSTOM_BOOTIMG_MK := device/sony/msm8974-common/boot/custombootimg.mk
+
+# init
+#TARGET_UNIFIED_DEVICE := true
+#TARGET_INIT_VENDOR_LIB := libinit_msm
+#TARGET_LIBINIT_DEFINES_FILE := device/sony/msm8974-common/libinit/init_sony.cpp
+
+# Exclude these from build.prop, they are set by libinit
+#PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
+#    ro.product.model \
+#    ro.product.device
 
 # use CAF variants
 BOARD_USES_QCOM_HARDWARE := true
@@ -61,6 +71,7 @@ DEVICE_SPECIFIC_CAMERA_PATH := hardware/sony/camera
 
 # CM Hardware
 BOARD_USES_CYANOGEN_HARDWARE := true
+BOARD_HARDWARE_CLASS += hardware/cyanogen/cmhw
 BOARD_HARDWARE_CLASS += device/sony/msm8974-common/cmhw
 
 # Font
