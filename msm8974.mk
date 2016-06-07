@@ -44,6 +44,12 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/system/etc/sec_config:system/etc/sec_config \
     $(COMMON_PATH)/rootdir/system/etc/sensors/sensors_settings:system/etc/sensors/sensors_settings
 
+# QMI
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/system/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
+    $(COMMON_PATH)/system/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
+    $(COMMON_PATH)/system/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml
+
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8974 \
