@@ -1,2 +1,0 @@
-set_prop(system_app, timekeep_prop)
-allow system_app system_app_data_file:file x_file_perms;

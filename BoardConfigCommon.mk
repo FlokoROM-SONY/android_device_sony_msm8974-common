@@ -115,10 +115,7 @@ BOARD_CHARGER_ENABLE_SUSPEND := true
 TARGET_SYSTEM_PROP := device/sony/msm8974-common/system.prop
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
-
-BOARD_SEPOLICY_DIRS += \
-    device/sony/msm8974-common/sepolicy
+include device/sony/sepolicy/sepolicy.mk
 
 # TWRP
 include device/sony/msm8974-common/twrp.mk

@@ -1,4 +1,0 @@
-persist.sys.timeadjust         u:object_r:timekeep_prop:s0
-
-sys.keymaster.loaded           u:object_r:tee_prop:s0
-sys.listeners.registered       u:object_r:tee_prop:s0
