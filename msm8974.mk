@@ -144,6 +144,7 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_PACKAGES += \
+    init_sony \
     keycheck \
     toybox_static
 
