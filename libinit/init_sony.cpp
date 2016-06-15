@@ -70,16 +70,18 @@ void vendor_load_properties()
 
 #if VARIANT_GSM
     for (int i = 0; i < (signed)(sizeof(variants)/(sizeof(variants[0]))); i++) {
-        if (m_number == variants[i][0])
+        if (strcmp(model,variants[i].model) == 0) {
             variantID = i;
+            break;
+        }
     }
 
     if (variantID >= 0) {
-        if (variants[variantID][1]) { // DS
+        if (variants[variantID].is_ds) {
             property_set("persist.radio.multisim.config", "dsds");
             property_set("ro.telephony.default_network", "0,1");
             property_set("ro.telephony.ril.config", "simactivation");
-        } else if (variants[variantID][2]) { // LTE
+        } else if (variants[variantID].is_lte) {
             property_set("ro.telephony.default_network", "9");
         } else {
             property_set("ro.telephony.default_network", "0");

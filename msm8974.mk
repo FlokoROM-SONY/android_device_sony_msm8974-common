@@ -50,6 +50,10 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/rootdir/system/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
     $(COMMON_PATH)/rootdir/system/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml
 
+# Variant linking script
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/releasetools/firmware.sh:install/bin/firmware.sh
+
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8974 \
