@@ -19,6 +19,7 @@ TW_MAX_BRIGHTNESS := 255
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
 #TW_USE_TOYBOX := true
+TARGET_RECOVERY_QCOM_RTC_FIX := true
 
 # TWRP Storage
 RECOVERY_SDCARD_ON_DATA := true
