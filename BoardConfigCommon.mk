@@ -112,8 +112,6 @@ CM_POWERHAL_EXTENSION := qcom
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
-TARGET_SYSTEM_PROP := device/sony/msm8974-common/system.prop
-
 # SELinux
 include device/sony/sepolicy/sepolicy.mk
 
