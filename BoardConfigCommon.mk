@@ -30,9 +30,9 @@ TARGET_KERNEL_HAVE_EXFAT := true
 #BOARD_CUSTOM_BOOTIMG_MK := device/sony/msm8974-common/boot/custombootimg.mk
 
 # init
-#TARGET_UNIFIED_DEVICE := true
-#TARGET_INIT_VENDOR_LIB := libinit_msm
-#TARGET_LIBINIT_DEFINES_FILE := device/sony/msm8974-common/libinit/init_sony.cpp
+TARGET_UNIFIED_DEVICE := true
+TARGET_INIT_VENDOR_LIB := libinit_sony
+TARGET_RECOVERY_DEVICE_MODULES := libinit_sony
 
 # Exclude these from build.prop, they are set by libinit
 #PRODUCT_SYSTEM_PROPERTY_BLACKLIST := \
