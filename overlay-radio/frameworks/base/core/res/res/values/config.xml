@@ -68,6 +68,18 @@
     <!-- Set to true to add links to Cell Broadcast app from Settings and MMS app. -->
     <bool name="config_cellBroadcastAppLinks">true</bool>
 
+    <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
+    <bool name="config_intrusiveNotificationLed">true</bool>
+
+    <!-- Does the notification LED support multiple colors? Used to decide if the user can change the colors -->
+    <bool name="config_multiColorNotificationLed">true</bool>
+
+    <!-- Is the battery LED intrusive? Used to decide if there should be a disable option -->
+    <bool name="config_intrusiveBatteryLed">true</bool>
+
+    <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors -->
+    <bool name="config_multiColorBatteryLed">true</bool>
+
     <!-- The default iface on which to monitor data use -->
     <string name="config_datause_iface" translatable="false">rmnet0</string>
 
@@ -96,5 +108,9 @@
         <item>"gprs:4092,8760,11680,4096,8760,11680"</item>
         <item>"evdo:4094,87380,524288,4096,16384,262144"</item>
     </string-array>
+
+    <!-- Configure wifi tcp buffersizes in the form:
+         rmem_min,rmem_def,rmem_max,wmem_min,wmem_def,wmem_max -->
+    <string name="config_wifi_tcp_buffers" translatable="false">524288,6291456,8291456,524288,6291456,8291456</string>
 
 </resources>
