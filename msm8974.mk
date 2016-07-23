@@ -46,9 +46,9 @@ PRODUCT_COPY_FILES += \
 
 # QMI
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/system/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
-    $(COMMON_PATH)/system/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
-    $(COMMON_PATH)/system/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml
+    $(COMMON_PATH)/rootdir/system/etc/data/dsi_config.xml:system/etc/data/dsi_config.xml \
+    $(COMMON_PATH)/rootdir/system/etc/data/netmgr_config.xml:system/etc/data/netmgr_config.xml \
+    $(COMMON_PATH)/rootdir/system/etc/data/qmi_config.xml:system/etc/data/qmi_config.xml
 
 # Camera
 PRODUCT_PACKAGES += \
