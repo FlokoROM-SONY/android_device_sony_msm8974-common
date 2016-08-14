@@ -29,9 +29,6 @@ TARGET_KERNEL_HAVE_EXFAT := true
 #BOARD_CUSTOM_BOOTIMG := true
 #BOARD_CUSTOM_BOOTIMG_MK := device/sony/msm8974-common/boot/custombootimg.mk
 
-# Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := device/sony/msm8974-common/releasetools
-
 # init
 TARGET_UNIFIED_DEVICE := true
 TARGET_INIT_VENDOR_LIB := libinit_sony
