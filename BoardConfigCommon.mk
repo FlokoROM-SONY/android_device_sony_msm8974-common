@@ -20,6 +20,10 @@ BOARD_VENDOR := sony
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
+# Build toolchain
+TARGET_GCC_VERSION_EXP := 4.9-cortex-a15
+ANDROID_COMPILE_WITH_JACK := true
+
 # Kernel properties
 TARGET_KERNEL_SOURCE := kernel/sony/msm
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
