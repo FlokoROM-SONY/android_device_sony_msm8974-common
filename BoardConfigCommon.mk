@@ -73,6 +73,7 @@ DEVICE_SPECIFIC_CAMERA_PATH := hardware/sony/camera
 BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS += hardware/cyanogen/cmhw
 BOARD_HARDWARE_CLASS += device/sony/msm8974-common/cmhw
+BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 
 # Font
 EXTENDED_FONT_FOOTPRINT := true
