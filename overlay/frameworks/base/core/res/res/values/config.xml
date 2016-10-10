@@ -192,4 +192,6 @@
     <!-- Permit doze mode to operate -->
     <bool name="config_enableAutoPowerModes">true</bool>
 
+    <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
+
 </resources>
