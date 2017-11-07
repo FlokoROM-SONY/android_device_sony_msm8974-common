@@ -48,6 +48,9 @@ TARGET_CUSTOM_DTBTOOL := dtbToolLineage
 # Defines for HW subsystems
 -include $(PLATFORM_PATH)/hardware/*/BoardConfig.mk
 
+# Binder API version
+TARGET_USES_64_BIT_BINDER := true
+
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 
