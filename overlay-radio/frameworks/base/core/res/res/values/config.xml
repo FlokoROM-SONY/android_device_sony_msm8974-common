@@ -105,4 +105,28 @@
         <item>"ehrpd:4094,87380,1048576,4096,16384,262144"</item>
     </string-array>
 
+    <!-- Values for GPS configuration -->
+    <string-array translatable="false" name="config_gpsParameters">
+        <item>XTRA_SERVER_1=http://xtrapath1.izatcloud.net/xtra3grc.bin</item>
+        <item>XTRA_SERVER_2=http://xtrapath2.izatcloud.net/xtra3grc.bin</item>
+        <item>XTRA_SERVER_3=http://xtrapath3.izatcloud.net/xtra3grc.bin</item>
+        <item>XTRA_VERSION_CHECK=0</item>
+        <item>ERR_ESTIMATE=0</item>
+        <item>NTP_SERVER=asia.pool.ntp.org</item>
+        <item>DEBUG_LEVEL=2</item>
+        <item>GPS_LOCK=3</item>
+        <item>SUPL_MODE=1</item>
+        <item>SUPL_VER=0x20000</item>
+        <item>SUPL_ES=0</item>
+        <item>USE_EMERGENCY_PDN_FOR_EMERGENCY_SUPL=1</item>
+        <item>CAPABILITIES=0x13</item>
+        <item>SUPL_HOST=supl.sonyericsson.com</item>
+        <item>SUPL_PORT=7275</item>
+        <item>LPP_PROFILE=0</item>
+        <item>NMEA_PROVIDER=0</item>
+        <item>SGLTE_TARGET=0</item>
+        <item>A_GLONASS_POS_PROTOCOL_SELECT=0x2</item>
+        <item>ENABLE_READ_FROM_SIM=0</item>
+    </string-array>
+
 </resources>
