@@ -24,9 +24,9 @@ USE_CAMERA_STUB := true
 
 # cryptfs hw
 # TODO: Readjust path after splitup of sony-common
-TARGET_CRYPTFS_HW_PATH := device/sony/common/cryptfs_hw
-PRODUCT_PACKAGES += \
-    libcryptfs_hw
+#TARGET_CRYPTFS_HW_PATH := device/sony/common/cryptfs_hw
+#PRODUCT_PACKAGES += \
+#    libcryptfs_hw
 
 # Target provides the powerHAL
 PRODUCT_PACKAGES += \

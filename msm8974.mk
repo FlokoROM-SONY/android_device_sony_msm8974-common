@@ -15,55 +15,14 @@
 COMMON_PATH := device/sony/msm8974-common
 
 # Include HW subsystem-specific makefiles
--include $(LOCAL_PATH)/hardware/*/packages.mk
--include $(LOCAL_PATH)/hardware/*/copy.mk
 -include $(LOCAL_PATH)/hardware/*/prop.mk
 
 # Include msm8974-common system properties
 -include $(LOCAL_PATH)/systemprop.mk
 
-# inherit hidl hals
-$(call inherit-product, device/sony/msm8974-common/hidl.mk)
-
-# Permissions
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/rootdir/system/vendor/etc/permissions/permissions_sony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/permissions_sony.xml
-
-# Snapdragon Camera
-PRODUCT_PACKAGES += \
-    SnapdragonCamera2
-
-# Display
-PRODUCT_PACKAGES += \
-    hwcomposer.msm8974 \
-    gralloc.msm8974 \
-    copybit.msm8974 \
-    memtrack.msm8974 \
-    libgenlock \
-    libmemalloc \
-    liboverlay \
-    libqdutils \
-    libtilerenderer \
-    libI420colorconvert
-
 # File systems
 PRODUCT_PACKAGES += \
     mount.exfat
-
-# GPS
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
-    frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
-
-PRODUCT_PACKAGES += \
-    libgps.utils \
-    libgnss \
-    libgnsspps\
-    libloc_core \
-    libloc_pla \
-    libloc_api_v02 \
-    libloc_ds_api \
-    liblocation_api
 
 # Ion
 PRODUCT_PACKAGES += \
@@ -74,43 +33,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qualcomm.perf.cores_online=2 \
     ro.vendor.extension_library=libqti-perfd-client.so
 
-# Lights
-PRODUCT_PACKAGES += \
-    lights.msm8974
-
-# Media profile
-PRODUCT_COPY_FILES += \
-    frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
-
-# Media
-PRODUCT_PACKAGES += \
-    qcmediaplayer
-
-PRODUCT_BOOT_JARS += \
-    qcmediaplayer
-
-# Permissions
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.ethernet.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.ethernet.xml
-
-# Omx
-PRODUCT_PACKAGES += \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libOmxCore \
-    libOmxEvrcEnc \
-    libOmxQcelp13Enc \
-    libOmxVdec \
-    libOmxVenc \
-    libOmxVdecHevc \
-    libc2dcolorconvert \
-    libdashplayer \
-    libdivxdrmdecrypt \
-    libmm-omxcore \
-    libstagefrighthw
-
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 ifneq ($(BOARD_HAVE_RADIO),false)
@@ -120,43 +42,11 @@ else
     DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay-wifionly
 endif
 
-
-# Camera (stock blobs)
-PRODUCT_PACKAGES += \
-    camera.qcom \
-    libshims_signal \
-    libshims_idd \
-    libsonycamera \
-    libGraphicBuffer
-
 # Recovery
 PRODUCT_PACKAGES += \
     keycheck
-
-# Seccomp
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
-    $(LOCAL_PATH)/seccomp/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy
-
-#  Mobile Data
-PRODUCT_PACKAGES += \
-    librmnetctl \
-    libxml2
-
-# Thermal management
-PRODUCT_PACKAGES += \
-    thermanager
 
 # TimeKeep for managing time offsets w.r.t. RTC
 PRODUCT_PACKAGES += \
     timekeep \
     TimeKeep
-
-# Wifi
-PRODUCT_PACKAGES += \
-    libwpa_client \
-    hostapd \
-    wificond \
-    wifilogd \
-    wpa_supplicant \
-    wpa_supplicant.conf
