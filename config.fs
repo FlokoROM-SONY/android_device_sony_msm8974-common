@@ -7,13 +7,13 @@ value:2951
 [AID_VENDOR_RFS_SHARED]
 value:2952
 
-[system/vendor/bin/qmuxd]
+[/vendor/bin/qmuxd]
 mode: 0700
 user: AID_RADIO
 group: AID_SHELL
 caps: BLOCK_SUSPEND
 
-[system/vendor/bin/mm-qcamera-daemon]
+[/vendor/bin/mm-qcamera-daemon]
 mode: 0700
 user: AID_CAMERA
 group: AID_SHELL
