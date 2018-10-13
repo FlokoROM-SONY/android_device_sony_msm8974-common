@@ -7,8 +7,6 @@
 # CPU governor controls and related
 /dev/socket/mpdecision(/.*)?           u:object_r:mpctl_socket:s0
 /dev/socket/mpctl                      u:object_r:mpctl_socket:s0
-/data/misc/perfd(/.*)?                 u:object_r:mpctl_data_file:s0
-/data/system/perfd(/.*)?               u:object_r:mpctl_data_file:s0
 /sys/devices/system/cpu/online         u:object_r:sysfs_devices_system_cpu:s0
 
 # devices
@@ -63,18 +61,15 @@
 /data/misc/quipc(/.*)?                 u:object_r:location_data_file:s0
 /data/misc/quipc/gsiff_socket          u:object_r:location_socket:s0
 /data/misc/gsiff_ctrl_q                u:object_r:location_data_file:s0
-/data/misc/location/mq/location-mq-s   u:object_r:location_data_file:s0
 
 /data/time(/.*)?                       u:object_r:time_data_file:s0
-
 
 ###################################
 # System files
 #
-/system/bin/audiod        			   u:object_r:proc_audiod:s0
-/system/bin/qseeproxydaemon            u:object_r:tee_exec:s0
 /system/vendor/bin/credmgrd            u:object_r:credmgrd_exec:s0
 /system/vendor/bin/credmgrfirstboot.sh u:object_r:credmgrd_exec:s0
+/system/vendor/bin/hostapd_cli         u:object_r:hostapd_exec:s0
 /system/vendor/bin/iddd                u:object_r:iddd_exec:s0
 /system/vendor/bin/idd-logreader       u:object_r:iddd_exec:s0
 /system/vendor/bin/macaddrsetup        u:object_r:addrsetup_exec:s0

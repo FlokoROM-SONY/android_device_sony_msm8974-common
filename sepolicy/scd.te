@@ -1,7 +1,7 @@
 #scd deamon
 type scd, domain;
 type scd_exec, exec_type, file_type;
-type scd_data, file_type;
+type scd_data, data_file_type, file_type;
 init_daemon_domain(scd)
 
 #============= scd ==============

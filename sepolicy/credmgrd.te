@@ -1,7 +1,7 @@
 #credmgrd define
 type credmgrd, domain;
 type credmgrd_exec, exec_type, file_type;
-type credmgrd_data_file, file_type;
+type credmgrd_data_file, data_file_type, file_type;
 type credmgrd_socket, file_type;
 type credmgrd_prop, property_type;
 init_daemon_domain(credmgrd);
