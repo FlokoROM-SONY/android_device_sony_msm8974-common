@@ -48,11 +48,6 @@ TARGET_CUSTOM_DTBTOOL := dtbToolLineage
 # Defines for HW subsystems
 -include $(PLATFORM_PATH)/hardware/*/BoardConfig.mk
 
-# Audio
-BOARD_USES_ALSA_AUDIO := true
-AUDIO_FEATURE_DISABLED_USBAUDIO := true
-AUDIO_FEATURE_ENABLED_EXTN_POST_PROC := true
-
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 
