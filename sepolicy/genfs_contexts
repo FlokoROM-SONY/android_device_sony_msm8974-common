@@ -1,3 +1,6 @@
 # Audio
 genfscon proc /bluetooth/sleep/lpm     u:object_r:proc_bluetooth_writable:s0
 genfscon proc /bluetooth/sleep/btwrite u:object_r:proc_bluetooth_writable:s0
+
+# Display
+genfscon sysfs /devices/mdp.0          u:object_r:sysfs_graphics:s0
