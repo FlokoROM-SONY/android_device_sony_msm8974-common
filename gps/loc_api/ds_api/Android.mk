@@ -9,6 +9,7 @@ LOCAL_MODULE := libloc_ds_api
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_SHARED_LIBRARIES := \
+    liblog \
     libutils \
     libcutils \
     libqmi_cci \

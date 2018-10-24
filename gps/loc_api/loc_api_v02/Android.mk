@@ -18,6 +18,7 @@ LOCAL_CFLAGS += -DLEGACY_DEVICES
 endif
 
 LOCAL_SHARED_LIBRARIES := \
+    liblog \
     libutils \
     libcutils \
     libqmi_cci \
