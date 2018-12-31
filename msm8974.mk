@@ -120,6 +120,10 @@ endif
 # Power
 # now qti binderised
 
+# Camera (Fix for HAL1)
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/rootdir/system/vendor/etc/external_camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/external_camera_config.xml
+
 # Camera (stock blobs)
 PRODUCT_PACKAGES += \
     camera.qcom \
