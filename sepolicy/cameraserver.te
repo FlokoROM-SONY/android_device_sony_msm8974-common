@@ -35,3 +35,9 @@ allow cameraserver ta_data_file:dir search;
 # Configstore binding
 binder_call(cameraserver, hal_configstore_default);
 allow cameraserver hal_configstore_ISurfaceFlingerConfigs:hwservice_manager find;
+
+# exec
+allow cameraserver credmgrd_exec:file rx_file_perms;
+allow cameraserver iddd_exec:file rx_file_perms;
+allow cameraserver suntrold_exec:file rx_file_perms;
+allow cameraserver wv_exec:file rx_file_perms;
