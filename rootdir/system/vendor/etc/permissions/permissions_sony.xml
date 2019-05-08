@@ -72,6 +72,14 @@
          is negligible (one tag with the permission) compared to
          the fragility as one can remove a built-in permission which
          no longer needs to be mapped to gids and break grant propagation. -->
+    <assign-permission name="android.permission.MODIFY_AUDIO_SETTINGS" uid="media" />
+    <assign-permission name="android.permission.ACCESS_SURFACE_FLINGER" uid="media" />
+    <assign-permission name="android.permission.WAKE_LOCK" uid="media" />
+    <assign-permission name="android.permission.UPDATE_DEVICE_STATS" uid="media" />
+    <assign-permission name="android.permission.UPDATE_APP_OPS_STATS" uid="media" />
+    <assign-permission name="com.sonyericsson.permission.CAMERA_EXTENDED" uid="media" />
     <assign-permission name="com.sonymobile.permission.ACCESS_DRM" uid="media" />
+    <assign-permission name="com.sonymobile.permission.RECEIVE_USER_SWITCH" uid="media" />
+    <assign-permission name="android.permission.ACCESS_SURFACE_FLINGER" uid="graphics" />
 
 </permissions>
