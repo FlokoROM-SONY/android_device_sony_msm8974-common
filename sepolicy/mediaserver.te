@@ -58,3 +58,7 @@ allow mediaserver hal_configstore_ISurfaceFlingerConfigs:hwservice_manager find;
 
 # Binder policies
 binder_call(mediaserver, hal_configstore_default);
+
+allow mediaserver suntrold_exec:file { getattr open read };
+allow mediaserver credmgrd_exec:file { getattr open read };
+allow mediaserver iddd_exec:file { getattr open read };
