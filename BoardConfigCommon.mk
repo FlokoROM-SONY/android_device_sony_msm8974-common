@@ -142,3 +142,6 @@ endif
 
 # Treble
 DEVICE_MANIFEST_FILE := device/sony/msm8974-common/treble-manifest.xml
+
+# FS config
+TARGET_FS_CONFIG_GEN := device/sony/msm8974-common/config.fs
