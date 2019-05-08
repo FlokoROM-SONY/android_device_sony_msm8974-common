@@ -19,3 +19,4 @@ allow priv_app netd_prop:file read;
 allow priv_app netd_stable_secret_prop:file read;
 allow priv_app nfc_nq_prop:file read;
 allow priv_app sysfs:file { open read };
+allow priv_app ta_prop:file { open read getattr };
