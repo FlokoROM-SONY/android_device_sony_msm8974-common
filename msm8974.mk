@@ -136,7 +136,7 @@ PRODUCT_PACKAGES += \
 
 # Snap Camera
 PRODUCT_PACKAGES += \
-    SnapdragonCamera
+    Snap2
 
 # Recovery
 PRODUCT_PACKAGES += \
