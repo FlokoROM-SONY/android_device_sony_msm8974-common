@@ -107,3 +107,7 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0 \
     android.hardware.wifi@1.1 \
     android.hardware.wifi@1.0-service
+
+# Trust
+PRODUCT_PACKAGES += \
+    vendor.lineage.trust@1.0-service
