@@ -37,18 +37,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.debug.wfd.enable=1 \
     tunnel.audio.encode = false
 
-# Snapdragon audio processing
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.speaker.prot.enable=false \
-    audio.deep_buffer.media=true \
-    af.fast_track_multiplier=1 \
-    av.streaming.offload.enable=enable \
-    media.aac_51_output_enabled=true \
-    qcom.hw.aac.encoder=true \
-    vendor.audio_hal.period_size=192 \
-    vendor.audio.offload.buffer.size.kb=192 \
-    vendor.audio.offload.gapless.enabled=false
-
 # Storage & USB OTG
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sys.sdcardfs=true \
