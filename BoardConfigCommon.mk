@@ -74,6 +74,7 @@ BLUE_LED_PATH := /sys/class/leds/led:rgb_blue/brightness
 
 # Font
 EXTENDED_FONT_FOOTPRINT := true
+EXCLUDE_SERIF_FONTS := false
 
 # Dexpreopt
 ifeq ($(HOST_OS),linux)
