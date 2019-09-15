@@ -1,0 +1,4 @@
+type tad_socket, file_type;
+type ta_data_file, data_file_type, file_type;
+type ltalabel_file, file_type;
+type persist_file, file_type;
