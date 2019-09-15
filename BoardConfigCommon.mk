@@ -26,8 +26,8 @@ TARGET_NO_RADIOIMAGE := true
 # Kernel properties
 ifeq (,$(filter $(TARGET_KERNEL_SOURCE),))
   TARGET_KERNEL_SOURCE := kernel/sony/msm8974
-  TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
-  KERNEL_TOOLCHAIN := ${PWD}/prebuilts/gcc/linux-x86/arm/arm-eabi-4.9/bin
+  TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
+  KERNEL_TOOLCHAIN := $(PWD)/../UBERTC/arm-linux-androideabi-4.9/bin/
 endif
 
 # use CAF variants
