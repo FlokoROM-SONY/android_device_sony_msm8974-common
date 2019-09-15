@@ -118,7 +118,8 @@ else
 endif
 
 # Power
-# now qti binderised
+PRODUCT_PACKAGES += \
+    power.msm8974
 
 # Camera (Fix for HAL1)
 PRODUCT_COPY_FILES += \
