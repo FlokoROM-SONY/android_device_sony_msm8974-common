@@ -64,7 +64,6 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/gps/gps.conf:system/etc/gps.conf \
     $(COMMON_PATH)/gps/sap.conf:system/etc/sap.conf \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
 
