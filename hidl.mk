@@ -68,6 +68,7 @@ PRODUCT_PACKAGES += \
 
 # Netd
 PRODUCT_PACKAGES += \
+    android.system.net.netd@1.1 \
     android.system.net.netd@1.0
 
 # Netutils
