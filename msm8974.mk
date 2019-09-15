@@ -140,7 +140,9 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_PACKAGES += \
-    keycheck
+    init_sony \
+    keycheck \
+    toybox_static
 
 # Seccomp
 PRODUCT_COPY_FILES += \
