@@ -17,7 +17,7 @@
 /idd/socket(/.*)?                                       u:object_r:iddd_socket:s0
 /idd/output(/.*)?                                       u:object_r:iddd_file:s0
 /idd/startup-prober(/.*)?                               u:object_r:iddd_file:s0
-/system/etc/iddd.conf                                   u:object_r:iddd_data_file:s0
+/(vendor|system)/vendor/etc/iddd\.conf                  u:object_r:iddd_data_file:s0
 
 # LTA-Label
 /lta-label(/.*)?                                        u:object_r:ltalabel_file:s0
