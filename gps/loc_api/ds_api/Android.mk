@@ -19,7 +19,6 @@ LOCAL_SHARED_LIBRARIES := \
     libdsi_netctrl \
     libqmiservices
 
-
 LOCAL_SRC_FILES += \
     ds_client.c
 
@@ -27,21 +26,22 @@ LOCAL_CFLAGS += \
     -fno-short-enums \
     -D_ANDROID_
 
-LOCAL_COPY_HEADERS_TO:= libloc_ds_api/
+LOCAL_COPY_HEADERS_TO := libloc_ds_api/
 
-LOCAL_COPY_HEADERS:= \
+LOCAL_COPY_HEADERS := \
     ds_client.h
 
 LOCAL_LDFLAGS += -Wl,--export-dynamic
 
 ## Includes
 LOCAL_C_INCLUDES := \
+    hardware/libhardware/include \
     $(TARGET_OUT_HEADERS)/libloc_eng \
     $(TARGET_OUT_HEADERS)/gps.utils \
     $(TARGET_OUT_HEADERS)/data/inc
 
-
 LOCAL_PRELINK_MODULE := false
+LOCAL_USE_VNDK := true
 
 include $(BUILD_SHARED_LIBRARY)
 

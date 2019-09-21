@@ -34,7 +34,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <stddef.h>
-#include <utils/Log.h>
+#include <log/log.h>
 #include <log_util.h>
 #include <loc_log.h>
 #include "../include/qmi_client.h"

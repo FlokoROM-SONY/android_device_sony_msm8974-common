@@ -39,9 +39,9 @@ LOCAL_CFLAGS += \
     -fno-short-enums \
     -D_ANDROID_
 
-LOCAL_COPY_HEADERS_TO:= libloc_api_v02/
+LOCAL_COPY_HEADERS_TO := libloc_api_v02/
 
-LOCAL_COPY_HEADERS:= \
+LOCAL_COPY_HEADERS := \
     location_service_v02.h \
     loc_api_v02_log.h \
     loc_api_v02_client.h \
@@ -49,14 +49,15 @@ LOCAL_COPY_HEADERS:= \
     LocApiV02.h \
     loc_util_log.h
 
-
 ## Includes
 LOCAL_C_INCLUDES := \
+    hardware/libhardware/include \
     $(TARGET_OUT_HEADERS)/libloc_core \
     $(TARGET_OUT_HEADERS)/gps.utils \
     $(TARGET_OUT_HEADERS)/libloc_ds_api
 
 LOCAL_PRELINK_MODULE := false
+LOCAL_USE_VNDK := true
 
 include $(BUILD_SHARED_LIBRARY)
 
