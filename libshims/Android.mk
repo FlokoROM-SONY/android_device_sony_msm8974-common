@@ -56,7 +56,9 @@ LOCAL_C_INCLUDES := \
     $(LOCAL_PATH)/include \
     system/core/libutils \
     system/core/libgrallocusage/include \
-    frameworks/native/libs/vr/libdvr/include
+    frameworks/native/libs/ui/include
+
+LOCAL_HEADER_LIBRARIES := libui_headers
 
 LOCAL_SHARED_LIBRARIES := \
     android.frameworks.bufferhub@1.0 \
