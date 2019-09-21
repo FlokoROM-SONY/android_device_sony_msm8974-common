@@ -131,8 +131,7 @@ PRODUCT_PACKAGES += \
     libshims_signal \
     libshims_idd \
     libsonycamera \
-    libshim_camera \
-    libshim_cald
+    libshim_camera
 
 # Snap Camera
 PRODUCT_PACKAGES += \
