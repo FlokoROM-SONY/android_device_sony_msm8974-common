@@ -28,14 +28,9 @@
  */
 #define LOG_NIDEBUG 0
 
-#include <errno.h>
-#include <time.h>
-#include <string.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <fcntl.h>
 #include <dlfcn.h>
-#include <stdlib.h>
+#include <fcntl.h>
+#include <errno.h>
 
 #include "utils.h"
 #include "list.h"
@@ -43,7 +38,7 @@
 #include "power-common.h"
 
 #define LOG_TAG "QCOM PowerHAL"
-#include <log/log.h>
+#include <utils/Log.h>
 
 static void *qcopt_handle;
 static int (*perf_lock_acq)(unsigned long handle, int duration,
