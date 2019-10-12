@@ -59,7 +59,7 @@
 #define UNUSED(x) (void)(x)
 #define KM_SB_LENGTH (4096 * 2)
 
-#include <log/log.h>
+#include <cutils/log.h>
 struct qcom_km_ion_info_t {
     int32_t ion_fd;
     int32_t ifd_data_fd;
